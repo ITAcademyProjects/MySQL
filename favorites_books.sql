@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`Person` (
   `idPerson` INT NOT NULL,
   `name` VARCHAR(300) NULL,
-  `FavoriteidBook` INT NOT NULL,
+  `FavoriteidBook` INT,
   PRIMARY KEY (`idPerson`),
   INDEX `fk_Person_Book1_idx` (`FavoriteidBook` ASC),
   CONSTRAINT `fk_Person_Book1`
